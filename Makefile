@@ -1,9 +1,11 @@
 CC:=gcc
 CFLAGS:= -Wall -Werror -O
-TARGETS:=
+TARGETS:= mapreduce.c  mapreduce.h simple_count.c
 
-all: $(TARGETS)
+all: program1	
 
+program1:
+	mapreduce.c  mapreduce.h simple_count.c
 handin: handin-check
 	@echo "Handing in with git (this may ask for your GitHub username/password)..."
 	@git push origin master
